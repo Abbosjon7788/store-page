@@ -1,9 +1,12 @@
-import Layout from '../components/Layout'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 export default function App() {
-  return (
-    <Layout>
-      pages
-    </Layout>
-  )
+  const router = useRouter()
+
+  useEffect(() => {
+    router.push('/stores')
+  }, [])
+
+  return <p>Loading...</p>
 }

@@ -1,10 +1,12 @@
-@import "./font";
+@import "./fonts";
+@import "./components";
 
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: "Inter";
+  background-color: #eceff3;
 }
 
 a {
