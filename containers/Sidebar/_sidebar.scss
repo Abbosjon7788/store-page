@@ -1,0 +1,130 @@
+.sidebar {
+     width: 250px;
+     height: calc(100vh - 30px);
+     &-top {
+          padding: 18px 23px;
+          margin-bottom: 8px;
+          .title {
+               margin-left: 22px;
+          }
+     }
+     &-menus {
+          height: calc(100% - 68px);
+          padding-top: 37px;
+          padding-bottom: 16px;
+          .user-info {
+               padding-bottom: 32px;
+               .user-img {
+                    overflow: hidden;
+                    width: 64px;
+                    height: 64px;
+                    margin: 0 40px;
+               }
+               .user-name {
+                    margin-top: 20px;
+                    text-align: center;
+               }
+               .balance {
+                    padding: 0 35px;
+                    margin-top: 25px;
+                    .wallet {
+                         padding: 20px;
+                         margin-bottom: 3px;
+                         background-color: rgba(#c0c2cc, 0.07);
+                         border: 1px solid rgba(0, 0, 0, 0.0245);
+                         .plus-icon {
+                              width: 20px;
+                              height: 20px;
+                              border-radius: 50%;
+                              background-color: #16aa16;
+                              svg {
+                                   path {
+                                        fill: white;
+                                   }
+                              }
+                         }
+                    }
+                    .share-wallet {
+                         width: 100%;
+                         padding: 10px 0;
+                         background-color: rgba(#f26110, 0.07);
+                         color: #f26110;
+                         outline: none;
+                         border: none;
+                         transition: all 0.3s ease;
+                         &:active {
+                              transform: scale(0.95);
+                         }
+                         .ml-12 {
+                              margin-left: 12px;
+                         }
+                    }
+               }
+          }
+          .scrolling {
+               // padding-top: 16px;
+               // padding-bottom: 32px;
+               // background-color: lightgray;
+               // height: calc(100% - 513px);
+               overflow-y: auto;
+               &::-webkit-scrollbar {
+                    width: 4px;
+               }
+               &::-webkit-scrollbar-thumb {
+                    background-color: rgba(#2e3456, 30%);
+                    border-radius: 10px;
+               }
+          }
+          .menu-list {
+               padding-left: 34px;
+               .pr-23 {
+                    padding-right: 23px;
+               }
+               .border-top {
+                    border-top: 1px solid #e6e7eb;
+               }
+
+               ul {
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                         padding: 0;
+                         transition: all 0.3s ease;
+                         &:hover {
+                              a {
+                                   color: #000;
+                                   svg {
+                                        path {
+                                             fill: #000;
+                                        }
+                                   }
+                              }
+                         }
+                         a {
+                              transition: inherit;
+                              color: rgba(#000000, 0.5);
+                              padding: 15px 0;
+                              span {
+                                   color: inherit;
+                              }
+                              svg {
+                                   path {
+                                        transition: all 0.3s ease;
+                                        fill: rgba(#2e3456, 0.3);
+                                   }
+                              }
+                              &.active {
+                                   color: #000;
+                                   svg {
+                                        path {
+                                             fill: #16aa16;
+                                        }
+                                   }
+                              }
+                         }
+                    }
+               }
+          }
+     }
+}

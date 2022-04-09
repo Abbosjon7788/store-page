@@ -1,3 +1,4 @@
+@import "./base";
 @import "./fonts";
 @import "./components";
 
@@ -6,12 +7,15 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Inter";
-  background-color: #eceff3;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 * {

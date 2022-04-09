@@ -1,7 +1,8 @@
-import React from 'react'
+import { memo } from 'react'
 import Head from 'next/head'
+import Sidebar from '../Sidebar'
 
-const Layout = ({ children, title = "Store demo" }) => {
+const Layout = ({ children, title = "GMarket" }) => {
      return (
           <div className="layout">
 
@@ -12,9 +13,7 @@ const Layout = ({ children, title = "Store demo" }) => {
                     <link rel="icon" href="/favicon.ico" />
                </Head>
 
-               <div>
-                    sidebar
-               </div>
+               <Sidebar />
                <div className="layout-content">
                     <div>navbar</div>
                     <div className="layout-pages">{children}</div>
@@ -23,4 +22,4 @@ const Layout = ({ children, title = "Store demo" }) => {
      )
 }
 
-export default React.memo(Layout)
+export default memo(Layout)
