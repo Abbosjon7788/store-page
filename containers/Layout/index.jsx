@@ -1,6 +1,7 @@
 import { memo } from 'react'
 import Head from 'next/head'
 import Sidebar from '../Sidebar'
+import Navbar from '../Navbar'
 
 const Layout = ({ children, title = "GMarket" }) => {
      return (
@@ -15,7 +16,7 @@ const Layout = ({ children, title = "GMarket" }) => {
 
                <Sidebar />
                <div className="layout-content">
-                    <div>navbar</div>
+                    <Navbar />
                     <div className="layout-pages">{children}</div>
                </div>
           </div>

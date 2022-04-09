@@ -1,0 +1,54 @@
+.navbar {
+     gap: 0 10px;
+     margin-bottom: 6px;
+     .arrow-left {
+          width: 60px;
+          height: 60px;
+     }
+     .location {
+          padding: 20px;
+          .ml-27 {
+               margin-left: 27px;
+          }
+     }
+     .search-input {
+          padding: 12px 20px;
+          input {
+               height: 36px;
+               border: none;
+               outline: none;
+               width: 230px;
+               padding-right: 12px;
+               border-right: 1px solid rgba(#2e3456, 0.12);
+               margin-left: 17px;
+               margin-right: 20px;
+               background-color: transparent;
+               font-family: "Inter";
+               &:placeholder {
+                    color: rgba(#2e3456, 0.3);
+               }
+          }
+     }
+     .time {
+          padding: 10px;
+          &-wrapper {
+               padding: 10px 20px;
+               border-radius: 50px;
+               color: #f26110;
+               background-color: rgba(#f26110, 7%);
+               span {
+                    color: inherit;
+               }
+          }
+     }
+     .total-price {
+          width: calc(100% - 989px);
+          padding: 10px 20px 10px 10px;
+          .backet-icon {
+               background-color: #16aa16;
+               width: 40px;
+               height: 40px;
+               border-radius: 50%;
+          }
+     }
+}
