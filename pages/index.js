@@ -1,8 +1,9 @@
+import Layout from '../components/Layout'
 
 export default function App() {
   return (
-    <p className="hello-next">
-      hello next
-    </p>
+    <Layout>
+      pages
+    </Layout>
   )
 }
