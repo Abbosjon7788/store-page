@@ -1,14 +1,16 @@
 .navbar {
-     gap: 0 10px;
      margin-bottom: 10px;
      padding-right: 15px;
      width: calc(100vw - 289px);
      background-color: #eceff3;
      z-index: 12px;
+     .nav-wrapper {
+          width: 100%;
+          gap: 0 10px;
+     }
      .arrow-left {
           width: 60px;
           height: 60px;
-          z-index: 13;
      }
      .location {
           padding: 20px;
