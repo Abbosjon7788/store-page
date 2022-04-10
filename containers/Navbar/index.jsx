@@ -1,8 +1,9 @@
 import { memo, useState } from 'react'
 import Icon from '../../static/Icons'
 import DeliveryTime from '../../components/DeliveryTime'
+import { connect } from 'react-redux'
 
-const Navbar = () => {
+const Navbar = ({ totalPrice }) => {
 
      const [showDeliveryTime, setShowDeliveryTime] = useState(false)
 
@@ -31,11 +32,11 @@ const Navbar = () => {
                     <div className="backet-icon flex items-center justify-center">
                          <Icon icon="backet" width={20} height={20} />
                     </div>
-                    <span className="ml-12 color-black medium-14">$230.80</span>
+                    <span className="ml-12 color-black medium-14">${totalPrice.toFixed(2)}</span>
                </div>
                {showDeliveryTime && <DeliveryTime setShowDeliveryTime={setShowDeliveryTime} />}
           </div>
      )
 }
 
-export default memo(Navbar)
+export default connect(({ reducer: { totalPrice } }) => ({ totalPrice }), null)(memo(Navbar))

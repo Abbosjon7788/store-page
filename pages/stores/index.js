@@ -3,6 +3,7 @@ import StoreCards from "../../components/StoreCards"
 import StoreTabMenu from "../../components/StoreTabMenu"
 
 const Stores = () => {
+
      return (
           <div className="store">
                <StoreHeader />

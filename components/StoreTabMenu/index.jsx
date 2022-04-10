@@ -2,8 +2,10 @@ import { memo, useState, useMemo } from 'react'
 import Icon from '../../static/Icons'
 import Link from 'next/link'
 import Image from 'next/image'
+import { connect } from 'react-redux'
+import { setTotalPrice } from '../../redux/reducer'
 
-const StoreTabMenu = () => {
+const StoreTabMenu = ({ setTotalPrice }) => {
 
      const [tab, setTab] = useState({ index: 1, title: 'Fruits and Vegetables' })
 
@@ -103,7 +105,7 @@ const StoreTabMenu = () => {
                                    <p className="color-dark regular-14 mb-4">{item.name}</p>
                                    <div className="flex justify-between items-center">
                                         <span className="semibold-20">${item.price}</span>
-                                        <div className="plus-btn pointer flex items-center justify-center">
+                                        <div onClick={() => setTotalPrice(parseFloat(item.price))} className="plus-btn pointer flex items-center justify-center">
                                              <Icon icon="plus" width={24} height={24} />
                                         </div>
                                    </div>
@@ -121,4 +123,4 @@ const StoreTabMenu = () => {
      )
 }
 
-export default memo(StoreTabMenu)
+export default connect(null, { setTotalPrice })(memo(StoreTabMenu))
