@@ -1,7 +1,11 @@
-import { memo } from 'react'
+import { memo, useState } from 'react'
 import Icon from '../../static/Icons'
+import DeliveryTime from '../../components/DeliveryTime'
 
 const Navbar = () => {
+
+     const [showDeliveryTime, setShowDeliveryTime] = useState(false)
+
      return (
           <div className="navbar flex items-center">
                <div className="arrow-left pointer flex items-center box-shadow bg-white justify-center radius-10">
@@ -17,7 +21,7 @@ const Navbar = () => {
                     <input type="text" placeholder="Search products in Wallmart" className="flex items-center color-black medium-14" />
                     <Icon icon="filter" width={20} height={20} className="light-icon pointer" />
                </div>
-               <div className="time pointer bg-white radius-10 box-shadow">
+               <div onClick={() => setShowDeliveryTime(true)} className="time pointer bg-white radius-10 box-shadow">
                     <div className="time-wrapper flex items-center">
                          <Icon icon="timer" width={20} height={20} />
                          <span className="ml-12 medium-14">By 09:00 — 23:00</span>
@@ -29,6 +33,7 @@ const Navbar = () => {
                     </div>
                     <span className="ml-12 color-black medium-14">$230.80</span>
                </div>
+               {showDeliveryTime && <DeliveryTime setShowDeliveryTime={setShowDeliveryTime} />}
           </div>
      )
 }
