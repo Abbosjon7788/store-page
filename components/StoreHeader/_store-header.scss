@@ -1,6 +1,6 @@
 .store-header {
      display: grid;
-     grid-template-columns: 979px calc(100% - 989px);
+     grid-template-columns: calc(100% - 150px) 140px;
      gap: 0 10px;
      margin-bottom: 20px;
      .banner {

@@ -4,6 +4,9 @@ import Image from 'next/image'
 import Icon from '../../static/Icons'
 
 const StoreHeader = () => {
+
+     let width = document.getElementById('navbar-wrapper').offsetWidth;
+
      return (
           <div className="store-header">
                <div className="banner flex direction-column">
@@ -11,7 +14,7 @@ const StoreHeader = () => {
                          <Image src="/assets/images/banner-logo.svg" width={52} height={52} />
                     </div>
                     <div className="banner-top">
-                         <Image src="/assets/images/header-img.png" width={979} height={200} />
+                         <Image src="/assets/images/header-img.png" width={width} height={200} />
                     </div>
                     <div className="banner-bottom flex items-center">
                          <span className="color-dark medium-28">Wallmart store</span>

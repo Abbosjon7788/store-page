@@ -8,8 +8,8 @@ const Navbar = ({ totalPrice }) => {
      const [showDeliveryTime, setShowDeliveryTime] = useState(false)
 
      return (
-          <div className="navbar flex items-center">
-               <div className="nav-wrapper">
+          <div className="navbar items-center">
+               <div className="nav-wrapper" id="navbar-wrapper">
                     <div className="arrow-left pointer flex items-center box-shadow bg-white justify-center radius-10">
                          <Icon icon="arrow-left" width={24} height={24} />
                     </div>

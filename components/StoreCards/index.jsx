@@ -43,6 +43,14 @@ const StoreCards = () => {
                     </div>
                     <button className="card-btn bold-12 pointer">Test40</button>
                </div>
+               <div className="card green radius-10">
+                    <p className="card-title bold-22 mb-6">Sale 40%</p>
+                    <p className="card-desc medium-14">Very tasty pasta</p>
+                    <div className="img-wrapper">
+                         <Image src="/assets/images/lagman.png" width={130} height={130} />
+                    </div>
+                    <button className="card-btn bold-12 pointer">Food40</button>
+               </div>
           </div>
      )
 }
