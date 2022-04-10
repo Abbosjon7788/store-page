@@ -49,6 +49,158 @@
                &::-webkit-scrollbar {
                     display: none;
                }
+               .calendar-wrapper {
+                    margin-bottom: 40px;
+                    .navigation-button {
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         width: 24px;
+                         height: 24px;
+                         border-radius: 50%;
+                         transition: all 0.3s ease;
+                         .icon {
+                              font-size: 20px;
+                              transition: all 0.3s ease;
+                              color: #121212;
+                              &.cursor-pointer {
+                                   cursor: pointer;
+                              }
+                              &.disabled {
+                                   cursor: auto;
+                                   color: #bdbdbd;
+                              }
+                         }
+
+                         // &.hover {
+                         //      &:hover {
+                         //           background-color: rgba(blue, 10%);
+                         //           .icon {
+                         //                color: blue;
+                         //           }
+                         //      }
+                         // }
+                    }
+                    .rmdp-wrapper {
+                         width: 100%;
+                         border-radius: 8px;
+                         user-select: none;
+                         -webkit-user-select: none;
+                         transition: all 0.3s ease;
+                         &.rmdp-shadow {
+                              box-shadow: none;
+                         }
+                         .rmdp-calendar {
+                              width: 100%;
+                              .rmdp-header {
+                                   margin-top: 0;
+                                   div:first-child {
+                                        align-items: center;
+                                        .navigation-button:first-child {
+                                             position: absolute;
+                                             right: 20px;
+                                        }
+                                        .navigation-button:last-child {
+                                             position: absolute;
+                                             right: 0;
+                                        }
+                                   }
+                                   &-values {
+                                        display: flex;
+                                        align-items: center;
+                                        margin: 0;
+                                        span {
+                                             color: #000;
+                                             font-size: 16px;
+                                             line-height: 24px;
+                                             font-weight: 500;
+                                             transition: all 0.3s ease;
+                                             &:first-child {
+                                                  padding-left: 0;
+                                             }
+                                        }
+                                        &::before {
+                                             content: url("../../public/assets/images/calendar.svg");
+                                             width: 22px;
+                                             height: 22px;
+                                             margin-right: 6px;
+                                        }
+                                   }
+                              }
+                              .rmdp-day-picker {
+                                   display: block !important;
+                                   padding: 0;
+                                   .rmdp-week {
+                                        &-day {
+                                             color: #000000;
+                                             font-family: "Inter";
+                                             font-weight: 500;
+                                             font-size: 14px;
+                                             line-height: 24px;
+                                             transition: all 0.3s ease;
+                                        }
+                                        .rmdp-day {
+                                             display: flex;
+                                             align-items: center;
+                                             justify-content: center;
+                                             cursor: auto;
+                                             user-select: none;
+                                             -webkit-user-select: none;
+                                             width: 50px;
+                                             height: 50px;
+                                             span {
+                                                  color: #000000;
+                                                  width: 45px;
+                                                  height: 45px;
+                                                  border-radius: 50%;
+                                                  background-color: #f8f8f8;
+                                                  border: 1px solid #f8f8f8;
+                                             }
+                                             &.rmdp-deactive {
+                                                  span {
+                                                       color: #bdbdbd;
+                                                       transition: all 0.3s ease;
+                                                  }
+                                             }
+                                             &.rmdp-today {
+                                                  span {
+                                                       background-color: #45a524;
+                                                       box-shadow: none;
+                                                       border: 1px solid #45a524;
+                                                       border-radius: 50%;
+                                                       color: white;
+                                                  }
+                                             }
+
+                                             span {
+                                                  font-weight: 500;
+                                                  font-size: 16px;
+                                                  line-height: 24px;
+                                                  color: #000;
+                                                  font-family: "Roboto", sans-serif;
+                                                  transition: all 0.3s ease;
+                                                  position: relative;
+
+                                                  &.highlight-green {
+                                                       &::after {
+                                                            position: absolute;
+                                                            bottom: 4px;
+                                                            left: 20px;
+                                                            content: "";
+                                                            width: 4px;
+                                                            height: 4px;
+                                                            background-color: #ffb800;
+                                                            border-radius: 50%;
+                                                       }
+                                                       background-color: white;
+                                                  }
+                                             }
+                                        }
+                                   }
+                              }
+                         }
+                    }
+               }
                .date {
                     padding: 16px 20px;
                     background-color: #f8f8f8;
