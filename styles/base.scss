@@ -23,6 +23,9 @@
 .color-dark {
      color: #000000;
 }
+.color-white {
+     color: white;
+}
 
 //display styles
 .flex {
@@ -47,6 +50,10 @@
 }
 
 //margin styles
+.mt-8 {
+     margin-top: 8px;
+}
+
 .mb-6 {
      margin-bottom: 6px;
 }
@@ -76,9 +83,22 @@
      letter-spacing: -1px;
 }
 
+.medium-28 {
+     font-size: 28px;
+     line-height: 17px;
+     font-weight: 500;
+     letter-spacing: -0.01em;
+}
 .medium-18 {
      font-size: 18px;
      line-height: 20px;
+     font-weight: 500;
+     letter-spacing: -0.01em;
+}
+
+.medium-18 {
+     font-size: 16px;
+     line-height: 18px;
      font-weight: 500;
      letter-spacing: -0.01em;
 }
