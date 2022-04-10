@@ -62,10 +62,6 @@
                }
           }
           .scrolling {
-               // padding-top: 16px;
-               // padding-bottom: 32px;
-               // background-color: lightgray;
-               // height: calc(100% - 513px);
                overflow-y: auto;
                &::-webkit-scrollbar {
                     width: 4px;
