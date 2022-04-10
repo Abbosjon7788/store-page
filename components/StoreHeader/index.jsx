@@ -7,6 +7,9 @@ const StoreHeader = () => {
      return (
           <div className="store-header">
                <div className="banner flex direction-column">
+                    <div className="banner-logo flex items-center justify-center">
+                         <Image src="/assets/images/banner-logo.svg" width={52} height={52} />
+                    </div>
                     <div className="banner-top">
                          <Image src="/assets/images/header-img.png" width={979} height={200} />
                     </div>
@@ -30,6 +33,10 @@ const StoreHeader = () => {
                                    <span className="medium-14 ml-12 color-dark link-name">Seved</span>
                               </a>
                          </Link>
+                         <div className="flex ml-auto items-center">
+                              <Icon icon="star" width={24} height={24} />
+                              <span className="medium-16 color-dark ml-6 mr-8">4.5</span>
+                         </div>
                     </div>
                </div>
                <div className="recipes bg-white box-shadow radius-10">
