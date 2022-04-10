@@ -4,6 +4,8 @@ import Icon from '../../static/Icons'
 const Navbar = () => {
      return (
           <div className="navbar flex items-center">
+               <div className="navbar-shadow">
+               </div>
                <div className="arrow-left pointer flex items-center box-shadow bg-white justify-center radius-10">
                     <Icon icon="arrow-left" width={24} height={24} />
                </div>

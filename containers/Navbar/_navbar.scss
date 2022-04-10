@@ -1,18 +1,37 @@
 .navbar {
      gap: 0 10px;
      margin-bottom: 10px;
+     .navbar-shadow {
+          display: block;
+          width: calc(100vw - 304px);
+          height: 85px;
+          position: fixed;
+          right: 15px;
+          top: 0;
+          z-index: 12;
+          background: linear-gradient(
+               180deg,
+               hsla(0, 0%, 97.3%, 0.3) 44%,
+               hsla(0, 0%, 97.3%, 0.46) 73%,
+               hsla(0, 0%, 100%, 0)
+          );
+          padding-top: 15px;
+     }
      .arrow-left {
           width: 60px;
           height: 60px;
+          z-index: 13;
      }
      .location {
           padding: 20px;
+          z-index: 13;
           .ml-27 {
                margin-left: 27px;
           }
      }
      .search-input {
           padding: 12px 20px;
+          z-index: 13;
           input {
                height: 36px;
                border: none;
@@ -31,6 +50,7 @@
      }
      .time {
           padding: 10px;
+          z-index: 13;
           &-wrapper {
                padding: 10px 20px;
                border-radius: 50px;
@@ -44,6 +64,7 @@
      .total-price {
           width: calc(100% - 989px);
           padding: 10px 20px 10px 10px;
+          z-index: 13;
           .backet-icon {
                background-color: #16aa16;
                width: 40px;

@@ -1,2 +1,11 @@
 @import "../../components/StoreHeader/store-header";
 @import "../../components/StoreCards/store-cards";
+@import "../../components/StoreTabMenu/store-tab-menu";
+
+.store {
+     height: calc(100vh - 100px);
+     overflow-y: auto;
+     &::-webkit-scrollbar {
+          display: none;
+     }
+}
