@@ -61,7 +61,7 @@ const DeliveryTime = ({ setShowDeliveryTime }) => {
                                         const { date } = props;
                                         let color = '';
                                         if (
-                                             date.day > currentDate + 1 &&
+                                             date.day > currentDate &&
                                              date.month.number === currentMonth
                                         )
                                              color = 'green';
