@@ -1,11 +1,17 @@
-import { memo } from 'react'
+import { memo, useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Icon from '../../static/Icons'
 
 const StoreHeader = () => {
 
-     let width = document.getElementById('navbar-wrapper').offsetWidth;
+     const [width, setWidth] = useState(0)
+
+     useEffect(() => {
+          if (typeof window === 'object') {
+               setWidth(document.getElementById('navbar-wrapper').offsetWidth)
+          }
+     }, [])
 
      return (
           <div className="store-header">
