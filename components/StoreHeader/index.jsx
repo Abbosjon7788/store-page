@@ -8,7 +8,7 @@ const StoreHeader = () => {
      const [width, setWidth] = useState(0)
 
      useEffect(() => {
-          if (typeof window === 'object') {
+          if (typeof window !== 'undefined') {
                setWidth(document.getElementById('navbar-wrapper').offsetWidth)
           }
      }, [])
