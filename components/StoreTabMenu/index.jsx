@@ -69,12 +69,12 @@ const StoreTabMenu = ({ setTotalPrice }) => {
      return (
           <div className="store-tab-menu">
                <div className="tab-menu-list flex items-center">
-                    <div className="filter-icon bg-white box-shadow pointerf radius-10 flex items-center justify-center">
+                    <div className="filter-icon bg-white box-shadow pointerf radius-10 flex items-center item justify-center">
                          <Icon icon="filter" width={20} height={20} />
                     </div>
                     {
                          tabList.map((item, i) => (
-                              <div key={i} onClick={() => setTab({ index: i, title: item })} className={`tab-menu ${tab.index === i && 'active'} pointer radius-10 flex items-center medium-14`}>
+                              <div key={i} onClick={() => setTab({ index: i, title: item })} className={`tab-menu ${tab.index === i && 'active'} pointer radius-10 flex item items-center medium-14`}>
                                    {item}
                               </div>
                          ))

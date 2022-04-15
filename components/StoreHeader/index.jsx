@@ -39,7 +39,7 @@ const StoreHeader = () => {
                          <Link href="/stores">
                               <a className="banner-link flex items-center ml-24">
                                    <Icon icon="saved" width={20} height={20} />
-                                   <span className="medium-14 ml-12 color-dark link-name">Seved</span>
+                                   <span className="medium-14 ml-12 color-dark link-name">Saved</span>
                               </a>
                          </Link>
                          <div className="flex ml-auto items-center">
